@@ -1,8 +1,8 @@
 Welcome.
 
-This space will be part learning journal and part musings of project ideas.
-Aiming for a post every other week.
+Part personal learning journal and part musings on areas of interest.
 
-Very keen on hearing any and all feedback on topics and content as well as recommendations of interesting areas and ideas to explore. 
+Got a concept you think I'd like mulling over?
+Feedback and recommendations are encouraged.
 
 Inspired by the good folks at [link to fast.ai](https://www.fast.ai). 
