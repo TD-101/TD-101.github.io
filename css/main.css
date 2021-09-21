@@ -1,0 +1,374 @@
+:root {
+  --pumpkin: #ff6f4c;
+  --bubblegum: #db84ca;
+  --mint: #82d8d5;
+  --seafoam: #bed6c8;
+  --sandy-sea: #98c0acab;
+  --mount-meadow: #1bbc9c;
+  --white-smoke: #f0f0f0;
+  --night-rider: #302d2b;
+  --black: #191b17;
+  --faded-seafoam: #98c0ac85;
+  --transition: all 0.2s ease-in-out;
+
+  /* new theme */
+  --deepsea: #297673;
+  --seafoam: #bed6c8;
+  /* BED6C8 91c7bd*/
+  --parchment: #d6c4a2;
+
+  --sand: #ddd7cd;
+  --dry-ochre: #c7816f;
+
+  /* background colours */
+  --bg: #f0e7d7;
+  --bg2: #ebdfcc;
+  --bg3: #f0e7d7;
+  --bg4: #eedec4;
+  --bg5: #f0e7d7;
+  /* --bg6: #; */
+}
+* {
+  font-family: "Montserrat", "Just Me Again Down Here", serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+::-moz-selection {
+  /* Code for Firefox */
+  /* color: red; */
+  background: var(--seafoam);
+}
+
+::selection {
+  /* color: var(--bubblegum); */
+  background: var(--sandy-sea);
+}
+html {
+  color: var(--night-rider);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+/* setup & reusable stylings */
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  /* color: var(--seafoam); */
+}
+.header li {
+  list-style-type: none;
+}
+
+li {
+  list-style-type: circle;
+  list-style-position: inside;
+  margin-left: 0.7rem;
+}
+
+button {
+  cursor: pointer;
+  outline: 0;
+  background: transparent;
+}
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.6rem 0;
+  line-height: 1.25;
+  font-weight: 400;
+  /* text-transform: capitalize; */
+}
+h2 span {
+  /* background-color: var(--sandy-sea); */
+  background-color: transparent !important;
+  background-image: linear-gradient(
+    to right,
+    var(--sandy-sea) 100%,
+    transparent 0%
+  );
+
+  background-position: 0 0.65em;
+  background-repeat: repeat-x;
+  /* background-size: 8px 3px; */
+}
+.pricing-item span,
+.booking a,
+.contact a {
+  color: var(--night-rider);
+  background-color: transparent !important;
+  background-image: linear-gradient(
+    to right,
+    var(--sandy-sea) 100%,
+    transparent 0%
+  );
+
+  background-position: 0 1.05em;
+  background-repeat: repeat-x;
+  background-size: 8px 3px;
+  transition: var(--transition);
+}
+
+.booking a:hover,
+.contact a:hover {
+  background-position: 0 0.65em;
+  background-size: 100% 100%;
+}
+
+.centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  padding: 6.5rem 0;
+  background-color: var(--bg);
+}
+.about {
+  background-color: var(--bg);
+}
+.pricing {
+  background-color: var(--bg);
+}
+.booking {
+  background-color: var(--bg);
+}
+.contact {
+  background-color: var(--bg);
+}
+/* header */
+.header {
+  background-color: var(--bg);
+  min-height: 58vh;
+  /* background-position: center; */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
+  /* color: rgb(255, 255, 255); */
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background-color: var(--parchment); */
+  /* z-index: 999; */
+  margin-top: 0.8rem;
+}
+.brand-and-toggler {
+  font-size: 1.65rem;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand-and-toggler a {
+  z-index: 3;
+  color: var(--night-rider);
+  mix-blend-mode: difference;
+  /* filter: invert(100%); */
+  /* opacity: 0.6; */
+
+  /* visibility: hidden; */
+  /* display: none; */
+
+  transition: var(--transition);
+}
+.navbar-brand {
+  /* font-weight: bold; */
+  /* columns: var(--night-rider); */
+  font-family: "Just Me Again Down Here";
+  font-size: 3rem;
+}
+.navbar-brand span {
+  /* color: var(--dry-ochre); */
+}
+.navbar-toggler {
+  border: none;
+  color: var(--night-rider);
+}
+.navbar-nav {
+  margin: 0.2rem 0 0.6rem 0;
+}
+.nav-item {
+  padding: 0.6rem 0;
+  text-align: center;
+}
+.nav-link {
+  /* text-transform: uppercase; */
+  font-size: 0.95rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  /* opacity: 0.65; */
+  transition: var(--transition);
+  color: var(--night-rider);
+  padding-left: 1.5rem;
+}
+
+.nav-link:hover {
+  color: var(--dry-ochre) !important;
+  /* background-color: var(--seafoam); */
+  /* color: var(--sand); */
+  /* letter-spacing: 0.2rem; */
+}
+.navbar-collapse {
+  display: none;
+}
+.hero-div {
+  flex: 1;
+  flex-direction: column;
+  text-align: center;
+}
+.hero-div h1 {
+  /* font-style: italic; */
+  font-family: "Just Me Again Down Here";
+  font-size: 5rem;
+  /* font-smooth: 2.55rem; */
+  padding-bottom: 0.4rem;
+  /* letter-spacing: 0.1rem; */
+}
+.hero-div p {
+  color: --var(--pumpkin);
+  font-size: 1.05rem;
+  letter-spacing: 1.5px;
+  /* font-weight: 100; */
+}
+.hero-btns {
+  margin-top: 2.8rem;
+}
+.hero-btns button {
+  /* border: 3.5px solid var(--sand); */
+  border: none;
+  /* border-radius: 2rem; */
+  padding: none;
+}
+.btn-book-now {
+  color: var(--night-rider);
+  background-color: transparent !important;
+  background-image: linear-gradient(
+    to right,
+    var(--sandy-sea) 100%,
+    transparent 0%
+  );
+
+  background-position: 0 1.05em;
+  background-repeat: repeat-x;
+  background-size: 8px 3px;
+  transition: var(--transition);
+}
+.btn-book-now:hover {
+  background-position: 0 0.65em;
+  background-size: 100% 100%;
+  /* background: var(--sand); */
+  /* font-weight: 500; */
+  /* border: solid; */
+  /* color: var(--white-smoke);
+  border-color: var(--mint); */
+  /* color: var(); */
+}
+
+/* jQuery */
+@media screen and (min-width: 992px) {
+  .navbar {
+    background: transparent;
+  }
+  .navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar-brand {
+    /* color: var(--white-smoke); */
+    /* font-size: 2rem; */
+  }
+  .navbar-toggler {
+    display: none;
+  }
+  .navbar-collapse {
+    display: block !important;
+  }
+  .navbar-nav {
+    display: flex;
+    margin: 0;
+  }
+  .nav-item {
+    margin-left: 1.8rem;
+  }
+  .nav-link {
+    color: var(--night-rider);
+  }
+  .hero-div h1 {
+    font-size: 5rem;
+  }
+  .btn-book-now {
+    display: inline-block;
+    /* margin-right: 0.8rem; */
+  }
+  .pricing .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  /* .pricing .full-row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  } */
+  .pricing-item {
+    margin: 0;
+  }
+
+  /* navbar change */
+  /* .cng-navbar { */
+  /* -webkit-box-shadow: 0 2px 5px 0 rgba(); */
+  /* -moz-box-shadow: 0 2px 5px 0 rgba(); */
+  /* box-shadow: 0 2px 5px 0 rgba(207, 205, 207, 0.7); */
+  /* margin-top: 0; */
+  /* background: #fff; */
+  /* } */
+  .cng-navbar .brand-and-toggler a {
+    color: var(--night-rider);
+    /* display: block; */
+    transition: var(--transition);
+    /* visibility: visible; */
+  }
+
+  .cng-navbar .navbar-brand {
+    color: var(--night-rider);
+  }
+  .cng-navbar .nav-link {
+    color: var(--night-rider);
+  }
+  .cng-navbar .nav-link:hover {
+    color: var(--white-smoke) !important;
+    background-color: var(--dry-ochre);
+    /* color: var(--parchment); */
+  }
+}
+
+/* @media screen and (min-width: 1200px) {
+  .hero-div h1 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .detail .row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+} */
