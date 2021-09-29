@@ -217,9 +217,7 @@ section {
   font-family: "Just Me Again Down Here";
   font-size: 3rem;
 }
-.navbar-brand span {
-  /* color: var(--dry-ochre); */
-}
+
 .navbar-toggler {
   border: none;
   color: var(--night-rider);
@@ -314,10 +312,10 @@ section {
     align-items: center;
     justify-content: space-between;
   }
-  .navbar-brand {
+  /* .navbar-brand {
     /* color: var(--white-smoke); */
-    /* font-size: 2rem; */
-  }
+  /* font-size: 2rem; */
+
   .navbar-toggler {
     display: none;
   }
