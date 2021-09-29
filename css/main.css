@@ -98,7 +98,7 @@ button {
 }
 
 .text-block {
-  width: 50%;
+  width: 100%;
   /* float: right; */
 }
 
@@ -164,6 +164,10 @@ section {
 .pricing {
   background-color: var(--bg);
 }
+.pricing .pricing-item {
+  padding-top: 2em;
+}
+
 .booking {
   background-color: var(--bg);
 }
@@ -305,7 +309,7 @@ section {
 /* jQuery */
 @media screen and (min-width: 992px) {
   .text-block {
-    width: 100%;
+    width: 50%;
     /* float: right; */
   }
   .navbar {
@@ -322,9 +326,11 @@ section {
 
   .navbar-toggler {
     display: none;
+    z-index: 999;
   }
   .navbar-collapse {
     display: block !important;
+    /* background-color: var(--bg2); */
   }
   .navbar-nav {
     display: flex;
@@ -335,6 +341,9 @@ section {
   }
   .nav-link {
     color: var(--night-rider);
+    z-index: 999;
+    /* background: ;
+    background-color: var(--bg2); */
   }
   .hero-div h1 {
     font-size: 5rem;
@@ -344,7 +353,7 @@ section {
     /* margin-right: 0.8rem; */
   }
   .pricing .price-grid {
-    padding-top: 2em;
+    /* padding-top: 2em; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
