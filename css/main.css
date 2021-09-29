@@ -53,6 +53,21 @@ html {
   scroll-behavior: smooth;
 }
 
+iframe {
+  width: 1px;
+  min-width: 100%;
+}
+
+#booking-iframe {
+  padding-top: 50px;
+  background-color: white;
+  /* width: 50%; */
+  height: 750px;
+  align-self: centre;
+  border: solid;
+  border-width: 7px;
+  border-color: var(--faded-seafoam);
+}
 /* setup & reusable stylings */
 img {
   width: 100%;
@@ -81,6 +96,12 @@ button {
   margin: 0 auto;
   padding: 0 1rem;
 }
+
+.text-block {
+  width: 50%;
+  /* float: right; */
+}
+
 h1,
 h2,
 h3,
@@ -320,7 +341,8 @@ section {
     display: inline-block;
     /* margin-right: 0.8rem; */
   }
-  .pricing .row {
+  .pricing .price-grid {
+    padding-top: 2em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
