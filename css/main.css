@@ -237,6 +237,8 @@ section {
   padding-top: 25%;
   margin: 0.2rem 0 0.6rem 0;
   background-color: var(--bg);
+  /* display: inline; */
+  /* float: right; */
 }
 .nav-item {
   padding: 0.6rem 0;
@@ -337,19 +339,27 @@ section {
 
   .navbar-toggler {
     display: none;
-    z-index: 999;
+    /* z-index: 999; */
   }
   .navbar-collapse {
     display: block !important;
-    z-index: 998;
+    /* position: absolute; */
+    /* float: right; */
+
+    /* z-index: 998; */
     /* background-color: var(--bg2); */
   }
   .navbar-nav {
     display: flex;
+    /* position: relative; */
+    justify-content: right;
+    padding-right: 1.5em;
+    padding-top: 2.5em;
     margin: 0;
     background-color: transparent !important;
   }
   .nav-item {
+    /* float: right; */
     margin-left: 1.8rem;
   }
   .nav-link {
