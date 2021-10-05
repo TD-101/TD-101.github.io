@@ -9,6 +9,7 @@
   --night-rider: #302d2b;
   --black: #191b17;
   --faded-seafoam: #98c0ac85;
+  --solid-faded-seafoam: #98c0aca0;
   --transition: all 0.2s ease-in-out;
 
   /* new theme */
@@ -128,7 +129,8 @@ h2 span {
 }
 .pricing-item span,
 .booking a,
-.contact a {
+.contact a,
+.nav-link span {
   color: var(--night-rider);
   background-color: transparent !important;
   background-image: linear-gradient(
@@ -144,7 +146,8 @@ h2 span {
 }
 
 .booking a:hover,
-.contact a:hover {
+.contact a:hover,
+.nav-link span:hover {
   background-position: 0 0.65em;
   background-size: 100% 100%;
 }
@@ -228,6 +231,7 @@ section {
 }
 .navbar-nav {
   margin: 0.2rem 0 0.6rem 0;
+  background-color: var(--bg);
 }
 .nav-item {
   padding: 0.6rem 0;
@@ -244,14 +248,12 @@ section {
   padding-left: 1.5rem;
 }
 
-.nav-link:hover {
-  color: var(--dry-ochre) !important;
-  /* background-color: var(--seafoam); */
-  /* color: var(--sand); */
-  /* letter-spacing: 0.2rem; */
-}
 .navbar-collapse {
   display: none;
+  position: absolute;
+  width: 100vh;
+  height: 100vw;
+  z-index: 999;
 }
 .hero-div {
   flex: 1;
@@ -330,11 +332,13 @@ section {
   }
   .navbar-collapse {
     display: block !important;
+    z-index: 998;
     /* background-color: var(--bg2); */
   }
   .navbar-nav {
     display: flex;
     margin: 0;
+    background-color: transparent !important;
   }
   .nav-item {
     margin-left: 1.8rem;
