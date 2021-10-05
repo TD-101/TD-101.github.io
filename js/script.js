@@ -7,8 +7,7 @@ $(document).ready(function(){
 
 
     $('.navbar-collapse>ul>li>a').click(function(){
-        $('.navbar-collapse').collapse('hide');
-
+        $('.navbar-collapse').slideToggle(300);
     });
 
     function vh(v) {
