@@ -6,12 +6,15 @@ $(document).ready(function(){
         // document.getElementsByClassName('navbar-collapse').style.height = '100% !important';
         // document.getElementsByClassName('navbar-nav').style.height = '100% !important';
         $('.navbar-collapse').slideToggle(300);
+        //  $('.navbar-collapse').toggleClass( "active" );
+        // toggle or assign class
         
     });
 
 
     $('.navbar-collapse>ul>li>a').click(function(){
         $('.navbar-collapse').slideToggle(300);
+        // $('.navbar-collapse').toggleClass( "active" );
          
     });
 
