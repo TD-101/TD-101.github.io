@@ -93,6 +93,7 @@ button {
   background: transparent;
 }
 .container {
+  width: 60%;
   max-width: 1320px;
   margin: 0 auto;
   padding: 0 1rem;
@@ -144,6 +145,7 @@ h2 span {
   background-repeat: repeat-x;
   background-size: 8px 3px;
   transition: var(--transition);
+  font-weight: normal;
 }
 
 .booking a:hover,
@@ -155,8 +157,7 @@ h2 span {
 }
 
 .faq-container .container {
-  /* margin: 0 !important; */
-  width: 1320px;
+  margin: 0 auto;
 }
 
 .faq-container .title {
@@ -191,7 +192,7 @@ section {
 /* header */
 .header {
   background-color: var(--bg);
-  min-height: 58vh;
+  min-height: 52vh;
   /* background-position: center; */
   /* background-size: cover; */
   /* background-repeat: no-repeat; */
@@ -281,7 +282,8 @@ section {
   z-index: 999;
 }
 .hero-div {
-  flex: 1;
+  margin-top: 80px;
+  padding: 80px 0;
   flex-direction: column;
   text-align: center;
 }
@@ -333,10 +335,16 @@ section {
   /* color: var(); */
 }
 
+@media only screen and (max-width: 992px) {
+  .container {
+    width: 94%;
+  }
+}
+
 /* jQuery */
 @media screen and (min-width: 992px) {
   .text-block {
-    width: 50%;
+    width: 100%;
     /* float: right; */
   }
   .navbar {
@@ -449,11 +457,12 @@ section {
 /* FAQ */
 .faq-heading {
   border-bottom: #777;
-  padding: 20px 60px;
+  padding: 20px 0;
 }
 .faq-container {
   display: flex;
-  justify-content: center;
+  width: 100%;
+  justify-content: start;
   flex-direction: column;
 }
 .hr-line {
@@ -465,19 +474,21 @@ section {
   /* background-color: #eee; */
   color: #444;
   cursor: pointer;
-  padding: 30px 20px;
+  padding-top: 30px;
+  max-width: 100%;
   width: 60%;
   border: none;
   outline: none;
   transition: 0.4s;
   margin: auto;
   float: left;
+  width: 100%;
 }
 .faq-body {
   /* margin: auto; */
   /* text-align: center; */
-  width: 50%;
-  padding: auto;
+  width: 100%;
+  padding-top: 15px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -488,12 +499,12 @@ section {
 
 /* Style the faq-page panel. Note: hidden by default */
 .faq-body {
-  padding: 2em;
+  padding-bottom: 2em;
   /* background-color: white; */
   display: none;
   overflow: hidden;
-  min-width: 468px;
-  max-width: 1320px;
+  /* min-width: 468px; */
+  /* max-width: 1320px; */
 }
 
 .faq-page::before {
@@ -503,6 +514,7 @@ section {
   color: #777;
   float: left;
   margin-right: 5px;
+  margin-top: 3px;
 
   /* vertical-align: -50%; */
 }
