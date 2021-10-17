@@ -130,7 +130,8 @@ h2 span {
 .pricing-item span,
 .booking a,
 .contact a,
-.nav-link span {
+.nav-link span,
+.faq-container a {
   color: var(--night-rider);
   background-color: transparent !important;
   background-image: linear-gradient(
@@ -147,9 +148,19 @@ h2 span {
 
 .booking a:hover,
 .contact a:hover,
-.nav-link span:hover {
+.nav-link span:hover,
+.faq-container a:hover {
   background-position: 0 0.65em;
   background-size: 100% 100%;
+}
+
+.faq-container .container {
+  /* margin: 0 !important; */
+  width: 1320px;
+}
+
+.faq-container .title {
+  margin: 0 auto !important;
 }
 
 .centre {
@@ -434,3 +445,69 @@ section {
     grid-template-columns: repeat(3, 1fr);
   }
 } */
+
+/* FAQ */
+.faq-heading {
+  border-bottom: #777;
+  padding: 20px 60px;
+}
+.faq-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hr-line {
+  width: 60%;
+  margin: auto;
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+  /* background-color: #eee; */
+  color: #444;
+  cursor: pointer;
+  padding: 30px 20px;
+  width: 60%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+  float: left;
+}
+.faq-body {
+  /* margin: auto; */
+  /* text-align: center; */
+  width: 50%;
+  padding: auto;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+/* .faq-page:hover {
+  background-color: var(--sandy-sea);
+} */
+
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+  padding: 2em;
+  /* background-color: white; */
+  display: none;
+  overflow: hidden;
+  min-width: 468px;
+  max-width: 1320px;
+}
+
+.faq-page::before {
+  content: "\02795";
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: left;
+  margin-right: 5px;
+
+  /* vertical-align: -50%; */
+}
+
+.active::before {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
