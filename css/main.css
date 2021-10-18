@@ -93,7 +93,7 @@ button {
   background: transparent;
 }
 .container {
-  width: 60%;
+  width: 50%;
   max-width: 1320px;
   margin: 0 auto;
   padding: 0 1rem;
@@ -132,7 +132,7 @@ h2 span {
 .booking a,
 .contact a,
 .nav-link span,
-.faq-container a {
+.faq a {
   color: var(--night-rider);
   background-color: transparent !important;
   background-image: linear-gradient(
@@ -151,16 +151,16 @@ h2 span {
 .booking a:hover,
 .contact a:hover,
 .nav-link span:hover,
-.faq-container a:hover {
+.faq a:hover {
   background-position: 0 0.65em;
   background-size: 100% 100%;
 }
 
-.faq-container .container {
+.faq .container {
   margin: 0 auto;
 }
 
-.faq-container .title {
+.faq .title {
   margin: 0 auto !important;
 }
 
@@ -459,7 +459,7 @@ section {
   border-bottom: #777;
   padding: 20px 0;
 }
-.faq-container {
+.faq {
   display: flex;
   width: 100%;
   justify-content: start;
